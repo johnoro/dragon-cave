@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class DragonCave {
@@ -17,7 +18,13 @@ public class DragonCave {
         System.out.println("is greedy and hungry and will eat you on sight.");
         System.out.println("Which cave will you go into? (1 or 2)");
 
-        int path = s.nextInt();
+        int path = 0;
+
+        try {
+            path = s.nextInt();
+        } catch (InputMismatchException ime) {
+            System.out.println("You should try to enter a number next time.");
+        }
 
         switch (path) {
             case 1:
