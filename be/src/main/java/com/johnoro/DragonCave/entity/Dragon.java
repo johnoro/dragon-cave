@@ -20,9 +20,10 @@ public class Dragon {
     private String name;
 
     public Dragon() {}
-    public Dragon(String name, int typeId) {
+    public Dragon(String name, int typeId, int caveId) {
         this.name = name;
         this.typeId = typeId;
+        this.caveId = caveId;
     }
 
     public int getId() { return id; }
@@ -46,6 +47,7 @@ public class Dragon {
         return "Dragon{" +
                 "id=" + id +
                 "type_id='" + typeId + '\'' +
+                "cave_id='" + caveId + '\'' +
                 "name='" + name + '\'' +
                 '}';
     }

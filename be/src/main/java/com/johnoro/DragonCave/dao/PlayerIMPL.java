@@ -25,7 +25,7 @@ public class PlayerIMPL implements PlayerDAO {
 
     @Transactional
     public List<Player> findAll() {
-        Query<Player> playerQuery = createSession().createQuery("from player");
+        Query<Player> playerQuery = createSession().createQuery("from Player");
         return playerQuery.getResultList();
     }
 

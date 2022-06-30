@@ -1,8 +1,6 @@
 package com.johnoro.DragonCave.controller;
 
-import com.johnoro.DragonCave.entity.Dragon;
 import com.johnoro.DragonCave.entity.Player;
-import com.johnoro.DragonCave.service.DragonService;
 import com.johnoro.DragonCave.service.PlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

@@ -25,7 +25,7 @@ public class AchievementIMPL implements AchievementDAO {
 
     @Transactional
     public List<Achievement> findAll() {
-        Query<Achievement> achievementQuery = createSession().createQuery("from achievement");
+        Query<Achievement> achievementQuery = createSession().createQuery("from Achievement");
         return achievementQuery.getResultList();
     }
 

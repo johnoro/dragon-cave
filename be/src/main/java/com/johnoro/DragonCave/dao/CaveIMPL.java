@@ -21,7 +21,7 @@ public class CaveIMPL implements CaveDAO {
 
     @Transactional
     public List<Cave> findAll() {
-        Query<Cave> caveQuery = createSession().createQuery("from cave");
+        Query<Cave> caveQuery = createSession().createQuery("from Cave");
         return caveQuery.getResultList();
     }
 

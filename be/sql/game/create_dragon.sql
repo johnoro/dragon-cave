@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS `dragon`;
 CREATE TABLE `dragon` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `type_id` int(11) NOT NULL,
-  `cave_id` int(11) NOT NULL,
+  `cave_id` int(11) DEFAULT NULL,
   `name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
 );

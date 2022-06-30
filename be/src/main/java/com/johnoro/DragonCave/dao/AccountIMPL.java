@@ -25,7 +25,7 @@ public class AccountIMPL implements AccountDAO {
 
     @Transactional
     public List<Account> findAll() {
-        Query<Account> accountQuery = createSession().createQuery("from account");
+        Query<Account> accountQuery = createSession().createQuery("from Account");
         return accountQuery.getResultList();
     }
 

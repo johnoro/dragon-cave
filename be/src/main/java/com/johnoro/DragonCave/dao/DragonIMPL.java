@@ -21,7 +21,7 @@ public class DragonIMPL implements DragonDAO {
 
     @Transactional
     public List<Dragon> findAll() {
-        Query<Dragon> dragonQuery = createSession().createQuery("from dragon");
+        Query<Dragon> dragonQuery = createSession().createQuery("from Dragon");
         return dragonQuery.getResultList();
     }
 
