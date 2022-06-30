@@ -10,6 +10,18 @@ public class Player {
     @Column(name = "id")
     private int id;
 
+    @Column(name = "account_id")
+    private int accountId;
+
     @Column(name = "name")
     private String name;
+
+    @Override
+    public String toString() {
+        return "Dragon{" +
+                "id=" + id +
+                "accountId='" + accountId + '\'' +
+                "name='" + name + '\'' +
+                '}';
+    }
 }

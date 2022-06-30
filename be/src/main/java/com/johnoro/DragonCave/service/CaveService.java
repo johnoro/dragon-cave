@@ -1,10 +1,10 @@
-package com.johnoro.DragonCave.dao;
+package com.johnoro.DragonCave.service;
 
 import com.johnoro.DragonCave.entity.Cave;
 
 import java.util.List;
 
-public interface CaveDAO {
+public interface CaveService {
     List<Cave> findAll();
 
     Object findById(int id);
