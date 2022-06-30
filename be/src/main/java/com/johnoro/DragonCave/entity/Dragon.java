@@ -19,7 +19,8 @@ public class Dragon {
     @Column(name = "name")
     private String name;
 
-    public Dragon() {}
+    public Dragon() { }
+
     public Dragon(String name, int typeId, int caveId) {
         this.name = name;
         this.typeId = typeId;
@@ -34,7 +35,7 @@ public class Dragon {
 
     public void setTypeId(int type) { this.typeId = typeId; }
 
-    public int getCaveId() {return caveId; }
+    public int getCaveId() { return caveId; }
 
     public void setCaveId(int caveId) { this.caveId = caveId; }
 
@@ -45,10 +46,10 @@ public class Dragon {
     @Override
     public String toString() {
         return "Dragon{" +
-                "id=" + id +
-                "type_id='" + typeId + '\'' +
-                "cave_id='" + caveId + '\'' +
-                "name='" + name + '\'' +
-                '}';
+               "id=" + id +
+               "type_id='" + typeId + '\'' +
+               "cave_id='" + caveId + '\'' +
+               "name='" + name + '\'' +
+               '}';
     }
 }

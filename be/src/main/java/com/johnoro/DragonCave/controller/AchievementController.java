@@ -15,7 +15,7 @@ public class AchievementController {
     private final AchievementService achievementService;
 
     @Autowired
-    public AchievementController(@Qualifier("achievementServiceIMPL")AchievementService achievementService) {
+    public AchievementController(@Qualifier("achievementServiceIMPL") AchievementService achievementService) {
         this.achievementService = achievementService;
     }
 

@@ -13,7 +13,7 @@ public class Account {
     @Column(name = "name")
     private String name;
 
-    public Account() {}
+    public Account() { }
 
     public Account(String name) {
         this.name = name;
@@ -21,7 +21,7 @@ public class Account {
 
     public int getId() { return id; }
 
-    public void setId(int id) { this.id = id;}
+    public void setId(int id) { this.id = id; }
 
     public String getName() { return name; }
 
@@ -30,8 +30,8 @@ public class Account {
     @Override
     public String toString() {
         return "Account{" +
-                "id=" + id +
-                "name='" + name + '\'' +
-                '}';
+               "id=" + id +
+               "name='" + name + '\'' +
+               '}';
     }
 }

@@ -16,7 +16,7 @@ public class Player {
     @Column(name = "name")
     private String name;
 
-    public Player() {}
+    public Player() { }
 
     public Player(int accountId, String name) {
         this.accountId = accountId;
@@ -37,10 +37,10 @@ public class Player {
 
     @Override
     public String toString() {
-        return "Dragon{" +
-                "id=" + id +
-                "accountId='" + accountId + '\'' +
-                "name='" + name + '\'' +
-                '}';
+        return "Player{" +
+               "id=" + id +
+               "accountId='" + accountId + '\'' +
+               "name='" + name + '\'' +
+               '}';
     }
 }

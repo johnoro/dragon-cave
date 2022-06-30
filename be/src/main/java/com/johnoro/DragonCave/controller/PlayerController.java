@@ -15,7 +15,7 @@ public class PlayerController {
     private final PlayerService playerService;
 
     @Autowired
-    public PlayerController(@Qualifier("playerServiceIMPL")PlayerService playerService) {
+    public PlayerController(@Qualifier("playerServiceIMPL") PlayerService playerService) {
         this.playerService = playerService;
     }
 

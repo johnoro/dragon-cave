@@ -16,7 +16,7 @@ public class Achievement {
     @Column(name = "description")
     private String description;
 
-    public Achievement() {}
+    public Achievement() { }
 
     public Achievement(String name, String description) {
         this.name = name;
@@ -38,9 +38,9 @@ public class Achievement {
     @Override
     public String toString() {
         return "Achievement{" +
-                "id=" + id +
-                "name='" + name + '\'' +
-                "description='" + description + '\'' +
-                '}';
+               "id=" + id +
+               "name='" + name + '\'' +
+               "description='" + description + '\'' +
+               '}';
     }
 }

@@ -13,7 +13,7 @@ public class Cave {
     @Column(name = "name")
     private String name;
 
-    public Cave() {}
+    public Cave() { }
 
     public Cave(String name) {
         this.name = name;
@@ -30,8 +30,8 @@ public class Cave {
     @Override
     public String toString() {
         return "Cave{" +
-                "id=" + id +
-                "name='" + name + '\'' +
-                '}';
+               "id=" + id +
+               "name='" + name + '\'' +
+               '}';
     }
 }

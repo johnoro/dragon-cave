@@ -15,7 +15,7 @@ public class CaveController {
     private final CaveService caveService;
 
     @Autowired
-    public CaveController(@Qualifier("caveServiceIMPL")CaveService caveService) {
+    public CaveController(@Qualifier("caveServiceIMPL") CaveService caveService) {
         this.caveService = caveService;
     }
 

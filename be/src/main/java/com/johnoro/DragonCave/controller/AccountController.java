@@ -15,7 +15,7 @@ public class AccountController {
     private final AccountService accountService;
 
     @Autowired
-    public AccountController(@Qualifier("accountServiceIMPL")AccountService accountService) {
+    public AccountController(@Qualifier("accountServiceIMPL") AccountService accountService) {
         this.accountService = accountService;
     }
 

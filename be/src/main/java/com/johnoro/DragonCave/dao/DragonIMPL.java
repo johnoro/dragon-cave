@@ -1,9 +1,9 @@
 package com.johnoro.DragonCave.dao;
 
 import com.johnoro.DragonCave.entity.Dragon;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

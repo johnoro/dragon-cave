@@ -15,7 +15,7 @@ public class DragonController {
     private final DragonService dragonService;
 
     @Autowired
-    public DragonController(@Qualifier("dragonServiceIMPL")DragonService dragonService) {
+    public DragonController(@Qualifier("dragonServiceIMPL") DragonService dragonService) {
         this.dragonService = dragonService;
     }
 
