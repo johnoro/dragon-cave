@@ -9,7 +9,7 @@ public interface AccountDAO {
 
     Object findById(int id);
 
-    void saveOrUpdate(Account part);
+    void saveOrUpdate(Account obj);
 
     void deleteById(int id);
 }

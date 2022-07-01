@@ -31,6 +31,7 @@ public class CaveIMPL implements CaveDAO {
     @Transactional
     public void saveOrUpdate(Cave cave) { createSession().saveOrUpdate(cave); }
 
+    // TODO: Set any corresponding dragons' cave_id to null?
     @Transactional
     public void deleteById(int id) {
         Session session = createSession();

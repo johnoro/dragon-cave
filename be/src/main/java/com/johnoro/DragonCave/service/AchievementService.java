@@ -9,7 +9,7 @@ public interface AchievementService {
 
     Object findById(int id);
 
-    void saveOrUpdate(Achievement part);
+    void saveOrUpdate(Achievement obj);
 
     void deleteById(int id);
 }

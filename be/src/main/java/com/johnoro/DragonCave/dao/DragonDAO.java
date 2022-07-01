@@ -9,7 +9,7 @@ public interface DragonDAO {
 
     Object findById(int id);
 
-    void saveOrUpdate(Dragon dragon);
+    void saveOrUpdate(Dragon obj);
 
     void deleteById(int id);
 }

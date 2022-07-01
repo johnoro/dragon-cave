@@ -9,7 +9,7 @@ public interface CaveDAO {
 
     Object findById(int id);
 
-    void saveOrUpdate(Cave cave);
+    void saveOrUpdate(Cave obj);
 
     void deleteById(int id);
 }

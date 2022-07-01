@@ -9,7 +9,7 @@ public interface PlayerService {
 
     Object findById(int id);
 
-    void saveOrUpdate(Player part);
+    void saveOrUpdate(Player obj);
 
     void deleteById(int id);
 }

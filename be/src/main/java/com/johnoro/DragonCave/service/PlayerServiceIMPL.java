@@ -12,7 +12,7 @@ public class PlayerServiceIMPL implements PlayerService {
     private final PlayerDAO playerDAO;
 
     @Autowired
-    public PlayerServiceIMPL(PlayerDAO partDAO) { this.playerDAO = partDAO; }
+    public PlayerServiceIMPL(PlayerDAO playerDAO) { this.playerDAO = playerDAO; }
 
     public List<Player> findAll() { return playerDAO.findAll(); }
 
