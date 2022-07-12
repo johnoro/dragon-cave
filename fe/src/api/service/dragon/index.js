@@ -1,6 +1,6 @@
 import makeService from 'api/util';
-import dragonType from './type';
+import DragonTypeService from './type';
 
-const dragon = makeService('dragon');
+const DragonService = makeService('dragon');
 
-export { dragon, dragonType };
+export { DragonService, DragonTypeService };
