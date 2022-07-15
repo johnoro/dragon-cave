@@ -7,7 +7,8 @@ const Cave = (props) => {
         "It is dark and spooky...",
         "A large dragon jumps out in front of you! He opens his jaws and..."
     ];
-    const [dragon, setDragon] = useState({});
+    const [dragonName, setDragonName] = useState('');
+    const [dragonType, setDragonType] = useState('');
 
     useEffect(() => {
         // perhaps only a call to DragonService here is needed?
@@ -32,7 +33,7 @@ const Cave = (props) => {
             ))}
             <p>
                 {/* To later check dragon type */}
-                {dragon
+                {dragonName
                     ? "Gobbles you down in one bite!"
                     : "Spits out a horde of treasure at your feet!"
                 }
